@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ReservaDTO {
 
-	private Long id;
+	private Integer id;
 
-	private Long libroId;
+	private Integer libroId;
 
-	private Long usuarioId;
+	private Integer usuarioId;
 
 	private LocalDate fechaReserva;
 

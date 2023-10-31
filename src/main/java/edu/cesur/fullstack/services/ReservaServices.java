@@ -6,9 +6,9 @@ import edu.cesur.fullstack.models.ReservaDTO;
 
 public interface ReservaServices {
 
-	public ArrayList<ReservaDTO> getAllReservations(Long userId);
+	ArrayList<ReservaDTO> getAllReservations(Long userId);
 	
-	public ReservaDTO reserveBook(Long bookId, Long userId);
+	ReservaDTO reserveBook(Long bookId, Long userId);
 	
-	public ReservaDTO cancelReservation(Long bookId, Long userId);
+	void cancelReservation(Long bookId, Long userId);
 }

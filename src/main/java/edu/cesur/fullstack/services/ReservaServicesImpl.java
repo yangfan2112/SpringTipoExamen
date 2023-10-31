@@ -5,16 +5,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import edu.cesur.fullstack.models.ReservaDTO;
+import edu.cesur.fullstack.models.UsuarioDTO;
 
 public class ReservaServicesImpl implements ReservaServices{
 
-	ArrayList<ReservaDTO> listaReserva = new ArrayList<>(Arrays.asList(new ReservaDTO(1L,1L,1L,LocalDate.of(19, 10, 2023),LocalDate.of(29, 10, 2023)),
-			new Persona(2,"María","Gómez",30),
-			new Persona(3,"Pedro","González",28)));
+	ArrayList<ReservaDTO> reservas = new ArrayList<ReservaDTO>();
 	@Override
 	public ArrayList<ReservaDTO> getAllReservations(Long userId) {
 		// TODO Auto-generated method stub
-		return null;
+		return reservas;
 	}
 
 	@Override
@@ -24,9 +23,8 @@ public class ReservaServicesImpl implements ReservaServices{
 	}
 
 	@Override
-	public ReservaDTO cancelReservation(Long bookId, Long userId) {
-		// TODO Auto-generated method stub
-		return null;
+	public void cancelReservation(Long bookId, Long userId) {
+		
 	}
 
 	
