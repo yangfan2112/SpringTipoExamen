@@ -17,4 +17,6 @@ public class LibroDTO {
 	
 	private Boolean reservado;
 	
+	private String codigo;
+	
 }
